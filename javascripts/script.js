@@ -76,7 +76,7 @@ $(document).ready(function () {
 
     var card = $(this).parent().siblings('.card-option').find('img:eq(1)');
     console.log(card);
-    card.delay(5000).each(function (index) {
+    card.delay(1000).each(function (index) {
       $(this).delay(index * 300).animate({
         opacity: 1
       }, 0, function () {
