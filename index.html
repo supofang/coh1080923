@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+
+<head>
+  <meta charset="UTF-8">
+  <meta content='IE=edge' http-equiv='X-UA-Compatible'>
+  <meta content='width=device-width, initial-scale=1' name='viewport'>
+  <title>逆襲吧英雄-事前登入活動</title>
+  <link href='stylesheets/all.css' media='screen' rel='stylesheet' type='text/css'>
+</head>
+
+<body>
+  <div class="loading"></div>
+  <!--FB讚按扭程式-->
+  <div id="fb-root"></div>
+  <script async defer crossorigin="anonymous"
+    src="https://connect.facebook.net/zh_TW/sdk.js#xfbml=1&version=v4.0"></script>
+  <header class="header">
+    <div class="p p-left"></div>
+    <div class="p p-right"></div>
+    <a class="logo text-hide" href="#" target="_blank">逆襲吧英雄官網</a>
+    <div class="btnGroup">
+      <a href="#videoModal" class="btn-circle icon-play video-btn" data-toggle="modal"
+        data-src="https://www.youtube.com/embed/Kh5pPTTpji4"></a>
+      <a href="#" class="btn-circle icon-fb" target="_blank"></a>
+    </div>
+    <div class="downlaod d-flex justify-content-center">
+      <a href="" class="btn-download btn-download-google"></a>
+      <a href="" class="btn-download btn-download-ios"></a>
+    </div>
+  </header>
+  <div class="bg bg-1">
+    <section class="container py-5">
+      <h2 class="tit-text text-shadow-blue">活動<span class="h1">壹</span></h2>
+      <p class="h5 text-center text-shadow-blue">登入FB按讚粉絲團，立即獲得三國名將！</p>
+      <div class="content mx-auto my-5">
+        <p class="h5 mt-3 tit-p">預約完成即可獲得</p>
+        <ul class="gift d-flex justify-content-around">
+          <li class="w-25"><img class="gift-icon" src="images/icon/icon-1.jpg" alt="">
+            <p class="mt-3">夜明珠x5
+              <br><span class="text-primary">遊戲幣</span>
+            </p>
+          </li>
+          <li class="w-25"><img class="gift-icon" src="images/icon/icon-2.jpg" alt="">
+            <p class="mt-3">小瓶秘藥x10
+              <br><span class="text-primary">武將經驗提升</span>
+            </p>
+          </li>
+          <li class="w-25"><img class="gift-icon" src="images/icon/icon-3.jpg" alt="">
+            <p class="mt-3">大牛排x5
+              <br><span class="text-primary">恢復體力</span>
+            </p>
+          </li>
+          <li class="w-25"><img class="gift-icon" src="images/icon/icon-4.jpg" alt="">
+            <p class="mt-3">藍色印記盒x15
+              <br><span class="text-primary">武將進階</span>
+            </p>
+          </li>
+        </ul>
+        <form class="p-4">
+          <div class="form-group form-row justify-content-center align-items-center rounded py-3 bg-fb">
+            <div class="col-auto">
+              <a href="#" class="btn btn-light rounded">登入FACEBOOK</a>
+            </div>
+            <div class="col-auto mt-2">
+              <div class="fb-like" data-href="https://www.facebook.com/RiseOfThePaladin/?epa=SEARCH_BOX" data-width=""
+                data-layout="button" data-action="like" data-size="large" data-show-faces="false" data-share="true">
+              </div>
+            </div>
+          </div>
+          <div class="form-group">
+            <div class="custom-control custom-radio custom-control-inline">
+              <input type="radio" id="android" name="phone" class="custom-control-input" checked>
+              <label class="custom-control-label" for="android">Android</label>
+            </div>
+            <div class="custom-control custom-radio custom-control-inline">
+              <input type="radio" id="ios" name="phone" class="custom-control-input">
+              <label class="custom-control-label" for="ios">IOS</label>
+            </div>
+          </div>
+          <div class="form-group form-row">
+            <div class="col-4">
+              <select class="form-control" name="phone_first" id="phone_first">
+                <option value="886" selected>台灣+886</option>
+                <option value="852">香港+852</option>
+                <option value="853">澳門+853</option>
+              </select>
+            </div>
+            <div class="col">
+              <input type="text" class="form-control" placeholder="請輸入0以後的手機號碼">
+            </div>
+          </div>
+          <div class="custom-control custom-checkbox">
+            <input type="checkbox" class="custom-control-input" id="agree" checked>
+            <label class="custom-control-label" for="agree">
+              <a href="https://www.gameboss.com.tw/service/privacy" target="_blank">同意黑馬數位依照個人資料處理辦法蒐集、處理或利用您的個人資料。</a>
+            </label>
+          </div>
+          <button type="submit" class="btn btn-primary btn-block mt-3">確認送出</button>
+          <small class="mb-0 mt-3 text-secondary">※若因個人行為誤填資訊導致無法正確發送序號簡訊，恕不另行補發，資料送出前請務必確認資料正確性。</small>
+        </form>
+      </div>
+    </section>
+  </div>
+  <div class="bg bg-2  js-progress">
+    <section class="container py-5  position-relative">
+      <div class="page-p position-absolute"></div>
+      <div class="row">
+        <div class="col-md-9 ml-md-auto">
+          <h2 class="tit-text text-shadow-red">活動<span class="h1">貳</span></h2>
+          <p class="h5 text-center text-shadow-red">呼朋引伴領好禮，活動期間預約人數達成目標即可獲得相對應之獎勵</p>
+          <div class="content my-5 content-red">
+            <p class="h5 mt-3 tit-p">目前預約人數</p>
+            <p class="num">
+              <span>2</span>
+              <span>5</span>
+              <span>5</span>
+              <span>8</span>
+              <span>0</span>
+            </p>
+            <div class="progress mt-5">
+              <div class="progress-bg">
+                <div class="progress-bar"></div>
+              </div>
+              <ul class="gift-progress">
+                <li class="">
+                  <img class="gift-icon gift-icon-red" src="images/icon/icon-5.jpg" alt="">
+                  <small>A級魂石匣(任選)*30</small>
+                </li>
+                <li class="">
+                  <img class="gift-icon gift-icon-red" src="images/icon/icon-6.jpg" alt="">
+                  <small>點兵令x3</small>
+                </li>
+                <li class="">
+                  <img class="gift-icon gift-icon-red" src="images/icon/icon-7.jpg" alt="">
+                  <small>貓眼石x2</small>
+                </li>
+                <li class="">
+                  <img class="gift-icon gift-icon-red" src="images/icon/icon-8.jpg" alt="">
+                  <small>名將任選箱-A+*1</small>
+                </li>
+              </ul>
+            </div>
+            <p>※預約人數達50,000或上市後將根據達成條件公布序號於此處，屆時請玩家盡快至遊戲內兌換，若因未及時領取導致無法兌換恕不另行補發。</p>
+            <p class="h3 text-center border border-danger py-4">獎勵序號：尚未公布</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+  <div class="bg bg-3">
+    <section class="container py-5">
+      <h2 class="tit-text text-shadow-purple">活動<span class="h1">參</span></h2>
+      <p class="h5 text-center text-shadow-purple">名將翻牌，活動期間每日登入已完成註冊之Facebook帳號即可獲得一次翻牌機會。當翻開的牌面湊成的對數達成指定數量時，將可獲得相對應獎勵。
+      </p>
+      <div class="row my-5 align-items-center">
+        <div class="col-lg-7 mb-3">
+          <div class="form-row content content-purple text-center position-relative">
+            <div class="btn-start">
+              <a href="#" class="btn js-btn">開始翻牌</a>
+            </div>
+            <div class="col-4 card-option">
+              <div>
+                <img class="img-fluid" src="images/card-0.png" alt="">
+                <img class="img-fluid" src="images/card-1.png" alt="">
+              </div>
+            </div>
+            <div class="col-4 card-option">
+              <div>
+                <img class="img-fluid" src="images/card-0.png" alt="">
+                <img class="img-fluid" src="images/card-2.png" alt="">
+              </div>
+            </div>
+            <div class="col-4 card-option">
+              <div>
+                <img class="img-fluid" src="images/card-0.png" alt="">
+                <img class="img-fluid" src="images/card-3.png" alt="">
+              </div>
+            </div>
+            <div class="col-4 card-option">
+              <div>
+                <img class="img-fluid" src="images/card-0.png" alt="">
+                <img class="img-fluid" src="images/card-4.png" alt="">
+              </div>
+            </div>
+            <div class="col-4 card-option">
+              <div>
+                <img class="img-fluid" src="images/card-0.png" alt="">
+                <img class="img-fluid" src="images/card-1.png" alt="">
+              </div>
+            </div>
+            <div class="col-4 card-option">
+              <div>
+                <img class="img-fluid" src="images/card-0.png" alt="">
+                <img class="img-fluid" src="images/card-2.png" alt="">
+              </div>
+            </div>
+            <div class="col-4 card-option">
+              <div>
+                <img class="img-fluid" src="images/card-0.png" alt="">
+                <img class="img-fluid" src="images/card-3.png" alt="">
+              </div>
+            </div>
+            <div class="col-4 card-option">
+              <div>
+                <img class="img-fluid" src="images/card-0.png" alt="">
+                <img class="img-fluid" src="images/card-4.png" alt="">
+              </div>
+            </div>
+            <div class="col-4 card-option">
+              <div>
+                <img class="img-fluid" src="images/card-0.png" alt="">
+                <img class="img-fluid" src="images/card-2.png" alt="">
+              </div>
+            </div>
+
+          </div>
+        </div>
+        <div class="col-lg-5">
+          <ul class="form-row content content-purple card">
+            <li>
+              <p class="text-center h5">湊滿1對</p>
+              <div class="d-flex align-items-center">
+                <img class="gift-icon" src="images/icon/icon-1.jpg" alt="">
+                <p class="mx-3">夜明珠x5</p>
+                <a href="#cardModal" class="btn btn-primary ml-auto" data-toggle="modal">領取序號</a>
+              </div>
+            </li>
+            <li>
+              <p class="text-center h5">湊滿2對</p>
+              <div class="d-flex align-items-center">
+                <img class="gift-icon" src="images/icon/icon-3.jpg" alt="">
+                <p class="mx-3">大牛排x10 </p>
+                <a href="#cardModal" class="btn btn-primary ml-auto disabled" data-toggle="modal">領取序號</a>
+              </div>
+            </li>
+            <li>
+              <p class="text-center h5">湊滿3對</p>
+              <div class="d-flex align-items-center">
+                <img class="gift-icon" src="images/icon/icon-8.jpg" alt="">
+                <p class="mx-3">名將任選箱-A+x1</p>
+                <a href="#cardModal" class="btn btn-primary ml-auto disabled" data-toggle="modal">領取序號</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </div>
+  <div class="bg bg-4">
+    <div class="container py-5">
+      <h2 class="tit-text text-shadow-yellow">遊戲介紹 </h2>
+      <div id="carouselStore" class="carousel slide my-5 " data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img class="d-block w-100" src="images/pic/2732x2048_1.jpg">
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="images/pic/2732x2048_2.jpg">
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="images/pic/2732x2048_3.jpg">
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="images/pic/2732x2048_4.jpg">
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselStore" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselStore" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+    </div>
+  </div>
+  <footer class="">
+    <div class="notice">
+      <div class="container my-5">
+        <p>注意事項</p>
+        <ol>
+          <li>活動時間：即日起 ~ 遊戲上架前。</li>
+          <li>【活動壹】序號將於遊戲上市後一週內透過簡訊發送，若因個人行為誤填資訊導致無法正確發送序號簡訊，恕不另行補發。</li>
+          <li>【活動貳】預約人數達50,000或上市後將根據達成條件公布序號於本網頁，屆時請玩家盡快至遊戲內兌換，若因未及時領取導致無法兌換恕不另行補發。</li>
+          <li>【活動參】達成活動條件後，可點擊領取序號的按鈕取得序號，並於遊戲內進行兌換。</li>
+          <li>活動【壹】一組手機號碼限領取一組序號，每組序號限兌換一次。</li>
+          <li>活動｛貳】一組遊戲帳號限兌換序號一次，不可重複兌換。</li>
+          <li>活動【參】每組序號限兌換一次，不可重複兌換。 </li>
+          <li>活動獎勵不可兌換現金、轉售，若有不當操作將取消領獎資格。</li>
+          <li>完成所有活動步驟，才符合領獎資格。</li>
+          <li>若因玩家個人因素，造成官方獎勵發送失敗，恕不補發。</li>
+          <li>官方保留活動隨時修改條款的權利，如有任何爭議，皆以黑馬數位科技股份有限公司之解釋及本活動的最終決策權為準。
+            <br>客服中心<a class="text-secondary" href="https://www.gameboss.com.tw/service/service_report"
+              target="_blank">www.gameboss.com.tw/service/service_report</a></li>
+        </ol>
+      </div>
+    </div>
+    <section class="container py-2 copyright">
+      <div class="row text-white align-items-end justify-content-center">
+        <div class="col-auto mt-3 mr-auto">
+          <ul class="list-unstyled d-flex align-items-end mb-0">
+            <li class="icon-gameboss"></li>
+            <li class="ml-2">©2019 GameBoss. All rights reserved</li>
+          </ul>
+        </div>
+        <div class="col-md-auto col-12 mt-3 d-flex">
+          <ul class="grade pl-3">
+            <li>請避免沉迷遊戲。</li>
+            <li>本遊戲部份內容涉及打鬥攻擊、虛擬戀愛與結婚等等內容。</li>
+            <li>本遊戲為免費遊戲，遊戲內部分須另行支付費用。</li>
+          </ul>
+          <div class="icon"><span class="icon-12"></span></div>
+        </div>
+      </div>
+    </section>
+
+  </footer>
+
+  <!-- 翻牌序號 -->
+  <div class="modal fade" id="cardModal" tabindex="-1" role="dialog">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <i class="fas fa-times-circle"></i>
+        </button>
+
+        <div class="modal-body d-flex flex-column">
+          <p class="h2 text-center text-secondary bg-light mb-0 py-3">12321321AAEEbbgeaa</p>
+          <button type="button" class="btn btn-primary" data-dismiss="modal">複製序號</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- video Modal -->
+  <div class="modal fade" id="videoModal" tabindex="-1" role="dialog">
+    <div class="modal-dialog  modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+
+        <div class="modal-body">
+          <!-- 16:9 aspect ratio -->
+          <div class="embed-responsive embed-responsive-16by9">
+            <iframe class="embed-responsive-item" src="" id="video" allowscriptaccess="always"
+              allow="autoplay"></iframe>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+  <script src="javascripts/vendor.js"></script>
+  <script src="javascripts/script.js"></script>
+</body>
+
+</html>
