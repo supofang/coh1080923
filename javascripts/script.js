@@ -68,7 +68,7 @@ $(document).ready(function () {
   $('.js-btn').on("click", function (e) {
     e.preventDefault();
     $(this).parent('.btn-start').fadeOut(500)
-      .siblings('.card-option').find('img:eq(0)').delay(5000).each(function (index) {
+      .siblings('.card-option').find('img:eq(0)').delay(1000).each(function (index) {
         $(this).delay(index * 300).animate({
           opacity: 0
         }, 300)
